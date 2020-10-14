@@ -1,9 +1,25 @@
 #include <stdio.h>
-#include <stdbool.h>
 
+void printArray(int*, int);
 
-bool sortArray(int *arr, int len) {
-    return 0;
+void sortArray(int *arr, int len) {
+
+    int key,i,j;
+
+    for (i=1; i<len; i++) {
+        key = arr[i];
+        j = i-1;
+
+        while (j>=0 && key<arr[j]) {
+            arr[j+1] = arr[j];
+            arr[j] = key;
+            j--;
+            printArray(arr, len);
+
+        }
+
+    }
+
 }
 
 void printArray(int arr[], int len) {
@@ -19,6 +35,6 @@ void main() {
     const int len = 8;
     int arr[8] = {12, 13, 15, 14, 21, 23, 25, 1};
 
-    printArray(arr, len);
-    
+    // printArray(arr, len);
+    sortArray(arr, len);
 }

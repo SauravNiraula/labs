@@ -41,7 +41,7 @@ void main() {
     printArray(arr, len);
     printf("Sorting! \n");
     int iteration = 1;
-    while(sortArray(&arr[0], len)) {
+    while(sortArray(arr, len)) {
         printf("%d iteration \n", iteration);
         printArray(arr, len);
         iteration++;
