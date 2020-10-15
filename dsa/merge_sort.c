@@ -89,8 +89,8 @@ void mergeSort(int *arr, int f, int l) {
 void main() {
 
 
-	const int len = 8;
-    int arr[8] = {12, 13, 15, 14, 21, 23, 25, 1};
+	int arr[] = {12, 13, 15, 14, 21, 23, 25, 1};
+    int len = sizeof(arr)/sizeof(arr[0]);
 
     // printArray(arr, len);
     mergeSort(arr, 0, len-1);

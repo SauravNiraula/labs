@@ -32,8 +32,8 @@ void printArray(int arr[], int len) {
 
 void main() {
 
-    const int len = 8;
-    int arr[8] = {12, 13, 15, 14, 21, 23, 25, 1};
+    int arr[] = {12, 13, 15, 14, 21, 23, 25, 1};
+    int len = sizeof(arr)/sizeof(arr[0]);
 
     // printArray(arr, len);
     sortArray(arr, len);
