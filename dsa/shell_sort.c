@@ -20,10 +20,10 @@ int shellSort(int arr[], int n)
             for (j = i; j >= gap && arr[j - gap] > temp; j -= gap) {
                 arr[j] = arr[j - gap]; 
 
-                printArray(arr, n);
             }
               
             arr[j] = temp; 
+            printArray(arr, n);
         } 
     } 
     return 0; 
